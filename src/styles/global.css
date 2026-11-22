@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #eeeae2;
+  background: #171615;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --paper: #eeeae2;
+  --muted: #a7a29a;
+  --line: #393735;
+  --red: #9e302a;
+  --ink: #171615;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+a { color: inherit; }
+a:focus-visible { outline: 2px solid #d95c52; outline-offset: 5px; }
+::selection { color: var(--paper); background: var(--red); }
+
+.site-shell { width: min(100% - 96px, 1440px); margin: 0 auto; }
+.site-header { min-height: 90px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); gap: 32px; }
+.wordmark { font: 700 20px/1 'Space Grotesk', sans-serif; letter-spacing: -.09em; text-decoration: none; white-space: nowrap; }
+.wordmark span { color: #bd443a; }
+.main-nav { display: flex; gap: clamp(18px, 3.2vw, 48px); margin-left: auto; }
+.main-nav a, .language-switch { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; transition: color 160ms ease; }
+.main-nav a:hover, .language-switch:hover { color: var(--paper); }
+.language-switch { border: 1px solid #4d4944; padding: 10px 12px; color: var(--paper); }
+.language-switch span { color: #bd443a; margin-left: 5px; }
+
+.hero { min-height: 570px; padding: 72px 0 82px; display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(40px, 8vw, 120px); position: relative; border-bottom: 1px solid var(--line); }
+.hero-copy { position: relative; z-index: 1; padding: 12px 0; }
+.eyebrow { display: flex; align-items: center; gap: 10px; margin: 0; color: var(--muted); font-size: 10px; letter-spacing: .13em; line-height: 1.5; text-transform: uppercase; }
+.red-mark { width: 7px; height: 7px; display: inline-block; flex: 0 0 7px; background: var(--red); }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+h1 { margin: 28px 0 24px; font-size: clamp(58px, 7.3vw, 104px); font-weight: 500; letter-spacing: -.085em; line-height: .88; }
+h1 span { display: block; }
+.hero-intro { max-width: 365px; margin: 0 0 32px; color: #b9b4ac; font-size: 14px; line-height: 1.75; }
+.text-link { display: inline-flex; align-items: center; gap: 20px; padding-bottom: 8px; border-bottom: 1px solid var(--red); font-size: 11px; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.text-link span { color: #d05a50; font-size: 15px; transition: transform 160ms ease; }
+.text-link:hover span { transform: translate(3px, -3px); }
+.hero-image-wrap { height: 415px; position: relative; background: #252220; }
+.hero-image { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.72) brightness(.82); }
+.image-caption, .image-index { position: absolute; bottom: 16px; padding: 7px 9px; background: rgba(23, 22, 21, .83); font-size: 9px; letter-spacing: .12em; }
+.image-caption { left: 16px; }
+.image-index { right: 16px; color: #d1ccc4; }
+.hero-side-note { position: absolute; right: -34px; top: 50%; color: #77726c; font-size: 8px; letter-spacing: .14em; writing-mode: vertical-rl; transform: translateY(-50%); }
+
+.featured { padding: 66px 0 84px; }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 32px; }
+.section-heading h2 { margin: 14px 0 0; font-size: clamp(32px, 4vw, 50px); font-weight: 500; letter-spacing: -.065em; }
+.section-note { max-width: 230px; margin: 0 0 6px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.drink-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.drink-card { min-width: 0; }
+.drink-image-wrap { height: clamp(180px, 23vw, 310px); position: relative; overflow: hidden; background: #272421; }
+.drink-image-wrap img { width: 100%; height: 100%; display: block; object-fit: cover; filter: saturate(.7) brightness(.83); transition: transform 500ms ease; }
+.drink-card:hover img { transform: scale(1.035); }
+.drink-number { position: absolute; top: 12px; left: 12px; padding: 6px 8px; background: var(--red); font: 600 10px 'Space Grotesk', sans-serif; }
+.drink-details { padding: 17px 0 0; }
+.drink-type { margin: 0 0 9px; color: var(--muted); font-size: 9px; letter-spacing: .1em; }
+.drink-details h3 { margin: 0 0 7px; font-size: 21px; font-weight: 500; letter-spacing: -.045em; }
+.drink-description { margin: 0; color: #aaa59d; font-size: 12px; line-height: 1.65; }
+.site-footer { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); color: var(--muted); }
+.site-footer p, .site-footer > span { margin: 0; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
+.site-footer .wordmark { color: var(--paper); }
+
+@media (max-width: 760px) {
+  .site-shell { width: min(100% - 40px, 560px); }
+  .site-header { min-height: 76px; flex-wrap: wrap; gap: 0 18px; }
+  .wordmark { font-size: 19px; }
+  .language-switch { margin-left: auto; padding: 8px 10px; }
+  .main-nav { order: 3; width: 100%; justify-content: space-between; gap: 10px; padding: 0 0 15px; overflow-x: auto; }
+  .main-nav a { white-space: nowrap; font-size: 9px; }
+  .hero { min-height: 0; padding: 48px 0 54px; grid-template-columns: 1fr; gap: 34px; }
+  h1 { margin: 23px 0 19px; font-size: clamp(58px, 15vw, 88px); }
+  .hero-intro { max-width: 330px; font-size: 13px; }
+  .hero-image-wrap { height: min(68vw, 340px); }
+  .hero-side-note { display: none; }
+  .featured { padding: 48px 0 58px; }
+  .section-heading { align-items: start; flex-direction: column; gap: 14px; margin-bottom: 23px; }
+  .section-note { max-width: 300px; }
+  .drink-grid { grid-template-columns: 1fr; gap: 28px; }
+  .drink-image-wrap { height: min(72vw, 360px); }
+  .drink-details { padding-top: 14px; }
+  .site-footer { min-height: 100px; flex-wrap: wrap; justify-content: space-between; padding: 20px 0; }
+  .site-footer p { order: 3; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
