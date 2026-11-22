@@ -68,6 +68,62 @@ h1 span { display: block; }
 .site-footer p, .site-footer > span { margin: 0; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; }
 .site-footer .wordmark { color: var(--paper); }
 
+.menu-page { min-height: 65vh; padding: 76px 0 90px; }
+.menu-heading { max-width: 760px; margin-bottom: 42px; }
+.menu-heading h1 { max-width: 720px; font-size: clamp(54px, 8vw, 94px); }
+.menu-intro { max-width: 540px; color: #b9b4ac; font-size: 14px; line-height: 1.75; }
+.venue-fields { display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: 18px; margin-bottom: 50px; }
+.venue-fields label, .price-field { display: grid; gap: 9px; color: #b9b4ac; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.venue-fields input, .venue-fields select, .price-field input { width: 100%; min-height: 48px; padding: 0 14px; border: 1px solid #514c46; border-radius: 0; background: #201e1c; color: var(--paper); font: 14px 'DM Sans', sans-serif; }
+.venue-fields input:focus-visible, .venue-fields select:focus-visible, .price-field input:focus-visible, input[type="checkbox"]:focus-visible, button:focus-visible { outline: 2px solid #d95c52; outline-offset: 3px; }
+.menu-section-title, .generated-menu h2 { margin: 0 0 18px; font-size: clamp(25px, 3vw, 38px); font-weight: 500; letter-spacing: -.055em; }
+.builder-list { border-top: 1px solid var(--line); }
+.builder-card { padding: 22px 0 24px; border-bottom: 1px solid var(--line); }
+.builder-card-layout { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 22px; align-items: start; }
+.builder-cocktail-image { width: 160px; height: 160px; display: block; object-fit: contain; background: #201e1c; filter: saturate(.82) brightness(.88); }
+.builder-card-content { min-width: 0; }
+.builder-card-top { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.cocktail-choice { display: inline-flex; align-items: center; gap: 14px; cursor: pointer; }
+.cocktail-choice input { width: 18px; height: 18px; accent-color: var(--red); }
+.builder-number { color: #8f8980; font: 500 11px 'Space Grotesk', sans-serif; }
+.builder-name { font: 500 clamp(19px, 2.7vw, 27px) 'Space Grotesk', sans-serif; letter-spacing: -.045em; }
+.recipe-source { display: inline-grid; place-items: center; width: 28px; height: 28px; margin-left: auto; border: 1px solid var(--line); color: #d47b70; font-size: 13px; text-decoration: none; }
+.builder-description, .builder-method { margin: 12px 0 0 47px; color: #aaa59d; font-size: 12px; line-height: 1.65; }
+.ingredient-list { display: grid; gap: 5px; margin: 15px 0 0 47px; padding: 0; color: #d6d0c7; list-style: none; font-size: 11px; }
+.ingredient-list li::before { content: '— '; color: #a13b34; }
+.price-field { width: min(100%, 220px); margin: 20px 0 0 47px; }
+.primary-button, .secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 18px; min-height: 46px; padding: 0 18px; border: 1px solid #a13b34; background: var(--red); color: var(--paper); font: 600 10px 'DM Sans', sans-serif; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; cursor: pointer; }
+.primary-button { margin-top: 28px; }
+.primary-button:hover { background: #b44239; }
+.secondary-button { border-color: #514c46; background: transparent; }
+.secondary-button:hover { border-color: #d47b70; }
+.form-error { margin: 15px 0 0; color: #f08c82; font-size: 12px; line-height: 1.6; }
+.generated-menu { margin-top: 35px; padding: 24px; border: 1px solid var(--line); background: #1d1b19; }
+.generated-menu h2 { font-size: 24px; }
+.generated-url { overflow-wrap: anywhere; color: #b9b4ac; font: 12px/1.7 monospace; }
+.generated-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.public-menu { max-width: 960px; margin: 0 auto; }
+.public-menu-heading { max-width: 740px; margin: 0 auto 55px; text-align: center; }
+.public-menu-heading .eyebrow { justify-content: center; }
+.public-menu-heading h1 { overflow-wrap: anywhere; font-size: clamp(48px, 8vw, 88px); }
+.public-menu-heading .menu-intro { margin: 0 auto; }
+.public-drink-list { border-top: 1px solid var(--line); }
+.public-drink { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 20px; padding: 25px 0; border-bottom: 1px solid var(--line); }
+.public-drink-image { width: 76px; height: 76px; display: block; object-fit: contain; background: #201e1c; filter: saturate(.82) brightness(.88); }
+.public-drink-copy { min-width: 0; }
+.public-drink .drink-type { margin-bottom: 8px; }
+.public-drink h2 { margin: 0 0 8px; font-size: clamp(23px, 3vw, 34px); font-weight: 500; letter-spacing: -.05em; }
+.public-drink p:last-child { margin: 0; color: #aaa59d; font-size: 12px; line-height: 1.65; }
+.public-drink strong { white-space: nowrap; font: 500 20px 'Space Grotesk', sans-serif; }
+.public-menu-actions { padding-top: 30px; text-align: center; }
+.public-menu-actions .form-error { text-align: center; }
+.invalid-menu { max-width: 720px; }
+.menu-qr { display: grid; justify-items: center; gap: 8px; margin: 32px auto 0; text-align: center; }
+.menu-qr img { display: block; width: min(240px, 100%); height: auto; image-rendering: pixelated; background: white; }
+.menu-qr p { max-width: 420px; margin: 0; color: var(--muted); font-size: 10px; line-height: 1.6; }
+.generated-menu .menu-qr { margin-top: 24px; }
+.qr-loading { min-height: 24px; }
+
 @media (max-width: 760px) {
   .site-shell { width: min(100% - 40px, 560px); }
   .site-header { min-height: 76px; flex-wrap: wrap; gap: 0 18px; }
@@ -88,8 +144,46 @@ h1 span { display: block; }
   .drink-details { padding-top: 14px; }
   .site-footer { min-height: 100px; flex-wrap: wrap; justify-content: space-between; padding: 20px 0; }
   .site-footer p { order: 3; width: 100%; }
+  .menu-page { padding: 48px 0 64px; }
+  .menu-heading { margin-bottom: 32px; }
+  .venue-fields { grid-template-columns: 1fr; gap: 14px; margin-bottom: 38px; }
+  .builder-card-top { align-items: flex-start; }
+  .builder-card-layout { grid-template-columns: minmax(0, 1fr) 104px; gap: 14px; }
+  .builder-cocktail-image { width: 104px; height: 104px; }
+  .recipe-source { margin-left: auto; }
+  .builder-description, .builder-method, .ingredient-list, .price-field { margin-left: 0; }
+  .generated-menu { padding: 18px; }
+  .public-menu-heading { margin-bottom: 36px; }
+  .public-drink { grid-template-columns: 60px minmax(0, 1fr) auto; gap: 12px; padding: 20px 0; }
+  .public-drink-image { width: 60px; height: 60px; }
+  .public-drink strong { font-size: 17px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+@page { size: A4; margin: 17mm; }
+@media print {
+  :root, body { color: #171615; background: #fff; }
+  body { min-width: 0; }
+  .site-shell { width: 100%; max-width: none; margin: 0; }
+  .site-header, .site-footer, .public-menu-actions, .language-switch { display: none !important; }
+  .menu-page { min-height: 0; max-width: none; padding: 0; }
+  .public-menu-heading { margin: 0 auto 12mm; }
+  .public-menu-heading .eyebrow, .public-menu-heading h1, .public-menu-heading .menu-intro,
+  .public-drink .drink-type, .public-drink h2, .public-drink p:last-child, .public-drink strong,
+  .menu-qr p { color: #171615; }
+  .public-menu-heading h1 { margin: 7mm 0 4mm; font-size: 36pt; line-height: 1.05; }
+  .public-menu-heading .menu-intro { font-size: 11pt; }
+  .public-drink-list { border-color: #aaa; }
+  .public-drink { grid-template-columns: 20mm minmax(0, 1fr) auto; gap: 5mm; padding: 7mm 0; border-color: #bbb; break-inside: avoid; }
+  .public-drink-image { width: 20mm; height: 20mm; filter: none; background: #fff; }
+  .public-drink h2 { font-size: 19pt; }
+  .public-drink p:last-child { font-size: 10pt; }
+  .public-drink strong { font-size: 13pt; }
+  .menu-qr { margin-top: 10mm; break-inside: avoid; }
+  .menu-qr img { width: 38mm; height: 38mm; }
+  .menu-qr p { font-size: 8pt; }
+  .builder-page, button, a.secondary-button { display: none !important; }
 }
